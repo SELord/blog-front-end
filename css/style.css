@@ -1,0 +1,146 @@
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 700px 50px;
+    grid-template-areas:
+    "nb"
+    "m"
+    "ft";
+    /*border: 2px solid red;*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar{
+    grid-area: nb;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: "bl ab";
+    /*border: 2px solid green;*/
+    width: 100%;
+    background-color: lightslategray;
+    color: white;
+}
+
+#mainLink{
+    /*border: 2px solid blue;*/
+    display: flex;
+    align-items: center;
+    grid-area: bl;
+    padding-left: 8px;
+}
+
+#aboutLink{
+    /*border: 2px solid blue;*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: ab;
+    padding-right: 25px;
+}
+
+.main{
+    grid-area: m;
+    /*border: 2px solid blue;*/
+}
+
+.footer{
+    grid-area: ft;
+    border: 2px solid black;
+}
+
+.mainPageHeader{
+    display: flex;
+    grid-area: hd;
+    align-items: center;
+    justify-content: center;
+    /*border: 2px solid black;*/
+}
+
+.nestGrid_1{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 500px 100px;
+    grid-template-areas:
+    "hd"
+    "cd"
+    "sb";
+}
+
+.nestGrid_2{
+    display:grid;
+    grid-area: cd;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 48% 48%;
+    grid-template-areas:
+    "topLeft topMiddle topRight"
+    "bottomLeft bottomMiddle bottomRight";
+    gap: 3%;
+    justify-content: center;
+    /*border: solid orangered;*/
+}
+
+.card{
+    border: 2px solid black;
+    /*background: gray;*/
+    padding: 5px;
+    text-align: center;
+}
+
+#card1{
+    grid-area: topLeft;
+    background-image: url('../images/cameron-venti-oCP-NL2l7gc-unsplash.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#card2{
+    grid-area: topMiddle;
+    background-image: url('../images/anqi-lu-7kWf7UK0h6Y-unsplash.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#card3{
+    grid-area: topRight;
+    background-image: url('../images/cameron-venti-8vLGr1SuRVA-unsplash.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#card4{
+    grid-area: bottomLeft;
+    background-image: url('../images/cameron-venti-cpT1X2nPN2c-unsplash.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#card5{
+    grid-area: bottomMiddle;
+    background-image: url('../images/marcelo-novais-bIsHxnrZbrs-unsplash.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#card6{
+    grid-area: bottomRight;
+    background-image: url('../images/willian-justen-de-vasconcellos-lDtPi8I-6TE-unsplash.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.subscribe{
+    grid-area: sb;
+    border: 2px solid yellowgreen;
+}
+
+button{
+    margin-top: 50px;
+}
+
+button:hover{
+    color: white;
+    background: gray;
+}
